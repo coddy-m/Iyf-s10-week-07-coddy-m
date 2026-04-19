@@ -6,7 +6,7 @@
 - **Date:** April, 2026
 
 ## Project Description
-Brief description of what you built and why.
+JS practice
 
 ## Technologies Used
 - HTML5                            
@@ -39,10 +39,3 @@ Brief description of what you built and why.
 - Solution : Required local server (npx serve); added clear setup instructions
 - Challenge : JSON.parse crashes on corrupted storage
 - Solution : Wrapped storage ops im try/catch + auto-clear corrupted keys + type validation
-
-
-## Screenshots (optional)
-![Screenshot description](https://github.com/coddy-m/iyf-s10-week-07-coddy-m/blob/main/images/Screenshot(42).png)
-
-## Live Demo (if deployed)
-[View Live Demo](https://your-deployed-url.com)
