@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">git 
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🛒 Cart</h1>
+    <a href="index.html" class="btn btn-secondary">← Back</a>
+  </header>
+  <main class="grid-2">
+    <div id="products-grid" class="flex flex-wrap"></div>
+    <div class="card">
+      <h3>Your Cart <span id="cart-count">(0)</span></h3>
+      <ul id="cart-items" class="list mt-2"></ul>
+      <div class="flex justify-between mt-2">
+        <strong>Total:</strong>
+        <span id="cart-total">$0.00</span>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="js/cart.js"></script>
+</body>
+</html>

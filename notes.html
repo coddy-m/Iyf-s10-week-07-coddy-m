@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📓 Notes</h1>
+    <a href="index.html" class="btn btn-secondary">← Back</a>
+  </header>
+  <main class="grid-2">
+    <div>
+      <button id="new-note" class="btn mb-2">+ New Note</button>
+      <ul id="notes-list" class="list card"></ul>
+    </div>
+    <div id="note-editor" class="card hidden">
+      <input id="note-title" placeholder="Title" class="mb-2">
+      <textarea id="note-content" placeholder="Write here..." rows="8"></textarea>
+      <div class="flex mt-2">
+        <button id="save-note" class="btn">💾 Save</button>
+        <span id="draft-status" class="text-muted"></span>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="js/notes.js"></script>
+</body>
+</html>

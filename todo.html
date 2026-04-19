@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📝 Persistent To-Do</h1>
+    <a href="index.html" class="btn btn-secondary">← Back</a>
+  </header>
+  <main>
+    <form id="todo-form" class="card flex">
+      <input id="todo-input" placeholder="What needs to be done?" required>
+      <button type="submit" class="btn">Add</button>
+    </form>
+    <div class="flex mt-2">
+      <button class="btn btn-secondary filter-btn" data-filter="all">All</button>
+      <button class="btn btn-secondary filter-btn" data-filter="active">Active</button>
+      <button class="btn btn-secondary filter-btn" data-filter="completed">Completed</button>
+    </div>
+    <ul id="todo-list" class="list card mt-2"></ul>
+    <div id="todo-stats" class="text-muted"></div>
+    <ul id="todo-list" class="list">
+</ul>
+  </main>
+  <script type="module" src="js/todo.js"></script>
+</body>
+</html>

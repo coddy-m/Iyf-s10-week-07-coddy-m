@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto-Save Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>📋 Contact Form</h1>
+    <a href="index.html" class="btn btn-secondary">← Back</a>
+  </header>
+  <main>
+    <p class="text-muted mb-2">Type anything. Refresh the page. Data stays. Submit to clear.</p>
+    <form id="autosave-form" class="card">
+      <label>Name</label>
+      <input name="name" class="mb-2" required>
+      <label>Email</label>
+      <input name="email" type="email" class="mb-2" required>
+      <label>Message</label>
+      <textarea name="message" rows="4" class="mb-2"></textarea>
+      <button type="submit" class="btn">📤 Submit</button>
+    </form>
+    <p id="form-status" class="text-muted mt-2"></p>
+  </main>
+  <script type="module" src="js/form-autosave.js"></script>
+</body>
+</html>

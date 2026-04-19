@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 7 Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🚀 Week 7: Professional JS</h1>
+    <button class="btn btn-secondary" id="theme-toggle">🌓 Theme</button>
+  </header>
+  <main>
+    <div class="card">
+      <h2>📦 Applications</h2>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <a href="todo.html" class="btn">📝 To-Do List</a>
+        <a href="notes.html" class="btn">📓 Notes</a>
+        <a href="cart.html" class="btn">🛒 Shopping Cart</a>
+        <a href="form.html" class="btn">📋 Auto-Save Form</a>
+      </div>
+    </div>
+    <p class="text-muted mt-2">Open via local server. All data persists automatically.</p>
+  </main>
+  <script type="module">
+    document.getElementById('theme-toggle').onclick = () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme_v2', next);
+    };
+    const saved = localStorage.getItem('theme_v2');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  </script>
+</body>
+</html>

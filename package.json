@@ -1,0 +1,15 @@
+{
+  "name": "week7-professional-js",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "eslint js/",
+    "lint:fix": "eslint js/ --fix",
+    "format": "prettier --write \"js/**/*.{js,json,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "serve": "^14.2.1"
+  }
+}
